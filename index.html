@@ -1,7 +1,11 @@
+<!-- Austin Smith's Final Projet - Solar System Simulator -->
+
 <!DOCTYPE html>
 <html lang="en-US"><head>
 
 <meta charset="UTF-8" />
+
+<!-- Sets the title of the page -->
 <title>Solar System Sim</title>
 
 <!-- Import a CSS stylesheet to style the page. -->
@@ -11,41 +15,35 @@
 <meta name="viewport" content="initial-scale=1" />
 
 </head><body>
+<!-- Sets up the canvas and notify user if the browser does not support the canvas element -->
 <canvas id="glCanvas" width="640" height="480">
 Your browser doesn't appear to support the
    <code>&lt;canvas&gt;</code> element. 
 </canvas>
 <div class="content">
    <div class="control-panel">
+      <!-- Creates a form which contains a list of buttons -->
        <form>
-          <audio loop >
-            <source src="classical_space.mp3" type="audio/mpeg">
-          </audio> <br>
-            <input id='chackbox-enable' type="checkbox" name="control" value="Enable" checked/> Enable <br>
-            <hr>
-            <div class="planetselection">
-            <input id="radio_sun" type="radio" name="planet" checked/>Sun <br>
+         <input id='chackbox-enable' type="checkbox" name="control" value="Enable" checked/> Enable <br> <hr>
+         <div class="planetselection">
+            <!-- List of radio buttons for indicating which planet is currently being observed -->
+            <input id="radio_sun" type="radio" name="planet"/>Sun <br>
             <input id="radio_mercury" type="radio" name="planet" />Mercury <br>
             <input id="radio_venus" type="radio" name="planet" />Venus <br>
-            <input id="radio_earth" type="radio" name="planet" />Earth <br>
+            <input id="radio_earth" type="radio" name="planet" checked/>Earth <br>
             <input id="radio_mars" type="radio" name="planet" />Mars <br>
             <input id="radio_jupiter" type="radio" name="planet" />Jupiter <br>
             <input id="radio_saturn" type="radio" name="planet" />Saturn <br>
             <input id="radio_uranus" type="radio" name="planet" />Uranus <br>
             <input id="radio_neptune" type="radio" name="planet" />Neptune <br>
           </div> <hr>
-          <p>Name: </p>
-          <p>Mass: </p>
-          <p></p>
-          <hr>
-         <button id='spawnPlanet' type="button"  name="control">Spawn Planet</button><br>
+          <!-- Button used for spawning in random planets -->
+         <button id='spawnPlanet' type="button"  name="control">Spawn Random Planet</button><br>
        </form>
    </div>
 </div>
 
-<!-- Import a JavaScript script to add interactivity to the page. -->
-<script id="planet-fragmentShader" type='x-shader/x-fragment' src="shaders/planetShader.frag"></script>
-<script id="planet-vertexShader" type='x-shader/x-vertex' src="shaders/planetShader.vert"></script>
+<!-- Import JavaScript scripts to add interactivity to the page. -->
 <script src="resources/three.js"></script>
 <script src="resources/TrackballControls.js"></script>
 <script src="script.js"></script>

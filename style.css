@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/*
+CS 3312, spring 2017
+YOUR NAME: Austin Smith
+*/
+
+body {
+   background-color: rgb(0, 0, 0);
+   font-family: Futura, "Century Gothic", Geneva, Tahoma, Verdana, Arial, sans-serif;
+   margin: 20px;
+   text-align: center;
+}
+
+/* Sets the button style to have solid white background and curved border with a transition period between colors */
+button {
+   background-color: white;
+   transition-duration: 0.4s;
+   padding: 10px;
+   width: 200px;
+   border-radius: 15px;
+   border: none;
+}
+
+/* when the mouse hovers over the button shade it a light gray (do not be decieved by "Darkgray" gray is infact brighter than darkgray) */
+button:hover {
+   background-color: darkgray;
+   color: white;
+}
+
+/* When the user clicks the button shade the button to a slightly darker gray */
+button:active {
+   background-color: gray;
+}
+
+/* sets the padding and format for the radio buttons */
+.planetselection {
+   padding-left: 64px;
+   text-align: left;
+}
+
+/* Sets the overall style for the main control panel */
+.control-panel {
+   position: fixed;
+   left: 10px;
+   top: 10px;
+   padding: 10px;
+   background-color: rgba(255, 255, 255, 0.8);
+   border-radius: 30px;
+   width: 256px;
+   color: #000;
+}
