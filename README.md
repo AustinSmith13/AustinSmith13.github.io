@@ -1,4 +1,4 @@
-#Solar System Simulator
+# Solar System Simulator
 
 Important: The simulator only works in fire fox.	
 
