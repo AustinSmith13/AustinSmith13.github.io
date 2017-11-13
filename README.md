@@ -13,3 +13,6 @@ The first section includes a single check box with the label "enable" next to it
 The second section includes a list of radio buttons indicating the planets in our solar system. Selecting one will tell the camera to orbit around the indicated planet.
 
 The third section includes a single button with the label "Spawn random planet". When clicked a planet will spawn at a random position with a random initial velocity.
+
+
+![alt text](https://github.com/HellFire13/HellFire13.github.io/blob/master/capture.png)
