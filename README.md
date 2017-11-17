@@ -1,6 +1,6 @@
 # Solar System Simulator
 
-Important: The simulator only works in fire fox.	
+Important: The simulator may apear with black textures for a few minutes while it downloads the necessary resources.	
 
 
 It will work in other web browsers but the planet textures will be black. Chrome version 58.0.3029.96 seems to work as well (sometimes)
